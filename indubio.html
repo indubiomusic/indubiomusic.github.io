@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    img.logo {
+      width: 200px;
+      max-width: 80%;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 60px;
+    }
+
+    a.button {
+      display: block;
+      text-align: center;
+      padding: 15px;
+      background-color: #1e88e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #1565c0;
+    }
+
+    .email {
+      font-size: 0.9em;
+      color: #bbbbbb;
+      margin-top: auto;
+    }
+
+    .email a {
+      color: #90caf9;
+      text-decoration: none;
+    }
+
+    .email a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="logo.png" alt="Logo" class="logo" />
+
+  <!-- Botones -->
+  <div class="buttons">
+    <a href="https://link1.com" class="button" target="_blank">Spotify</a>
+    <a href="https://link2.com" class="button" target="_blank">YouTube</a>
+    <a href="https://link3.com" class="button" target="_blank">Instagram</a>
+    <a href="https://link4.com" class="button" target="_blank">Lloc web</a>
+  </div>
+
+  <!-- Email -->
+  <div class="email">
+    Contacto: <a href="mailto:mail@mail.com">mail@mail.com</a>
+  </div>
+
+</body>
+</html>
