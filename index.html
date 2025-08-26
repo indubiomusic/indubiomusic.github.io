@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #121212;
-      background-image: url('fondo.jpg'); /* Aquí se añade la imagen de fondo */
+      background-image: url('fondo.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -41,16 +41,18 @@
       display: block;
       text-align: center;
       padding: 15px;
-      background-color: #1e88e5;
-      color: white;
+      background-color: transparent; /* Fondo transparente */
+      border: 2px solid white;       /* Borde blanco */
+      color: white;                  /* Texto blanco */
       text-decoration: none;
       border-radius: 5px;
       font-size: 1.1em;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     a.button:hover {
-      background-color: #1565c0;
+      background-color: white; /* Fondo blanco al pasar el mouse */
+      color: black;            /* Texto negro al pasar el mouse */
     }
 
     .email {
@@ -84,9 +86,8 @@
 
   <!-- Email -->
   <div class="email">
-    Contacte: <a href="mailto:info@indubio.cat">mail@mail.com</a>
+    Contacto: <a href="mailto:info@indubio.cat">info@indubio.cat</a>
   </div>
 
 </body>
 </html>
-
