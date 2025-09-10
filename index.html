@@ -20,7 +20,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      color: #ffffff;
+      color: #000000; /* Changed from white to black */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,7 +28,6 @@
       box-sizing: border-box;
       height: 100vh;
       width: 100vw;
-      /* Remove padding to prevent overflow */
       padding: 40px 20px 20px 20px;
     }
 
@@ -54,17 +53,18 @@
       text-align: center;
       padding: 15px;
       background-color: transparent;
-      border: 2px solid white;
-      color: white;
+      border: 2px solid black; /* Changed from white to black */
+      color: black; /* Changed from white to black */
       text-decoration: none;
       border-radius: 5px;
       font-size: 1.1em;
       transition: background-color 0.3s, color 0.3s;
+      margin: 5px 0; /* Added margin to each button */
     }
 
     a.button:hover {
-      background-color: white;
-      color: black;
+      background-color: black;
+      color: white;
     }
     
     .footer {
@@ -74,11 +74,11 @@
       width: 100%;
       text-align: center;
       font-size: 0.9em;
-      color: #bbbbbb;
+      color: #333333; /* Darker gray for contrast */
     }
 
     .footer a {
-      color: #90caf9;
+      color: #000000; /* Changed to black */
       text-decoration: none;
     }
 
@@ -88,7 +88,7 @@
 
     .firma {
       font-size: 0.9em;
-      color: #888888;
+      color: #444444; /* Changed from light gray to darker tone */
       margin-top: 5px;
     }
 
@@ -114,5 +114,3 @@
 
 </body>
 </html>
-
-
