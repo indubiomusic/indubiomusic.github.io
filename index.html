@@ -32,7 +32,7 @@
     }
 
     img.logo {
-      width: 160px;
+      width: 120px;
       max-width: 80%;
       margin-bottom: 30px;
       flex-shrink: 0;
@@ -41,7 +41,7 @@
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
       width: 100%;
       max-width: 300px;
       margin-bottom: 30px;
@@ -52,21 +52,36 @@
       display: block;
       text-align: center;
       padding: 15px;
-      background-color: transparent;
-      border: 2px solid black; /* Changed from white to black */
-      color: black; /* Changed from white to black */
+      /* background-color: transparent; */
+      /* border: 2px solid black;  Changed from white to black */
+      /* color: black;  Changed from white to black */
       text-decoration: none;
       border-radius: 5px;
       font-size: 1.1em;
       transition: background-color 0.3s, color 0.3s;
       margin: 5px 0; /* Added margin to each button */
+      background-color: rgba(0, 0, 0, 0.6); /* translucent black */
+      color: white;
+      border: 2px solid white;
+    }
+
+    a.button.videoclip {
+      background-color: rgba(231, 76, 60, 0.6); /* Soft red with 60% opacity */
+      /* border: 2px solid rgba(231, 76, 60, 0.8); Slightly stronger border */
+      border: 2px solid white;
+      color: white;
     }
 
     a.button:hover {
       background-color: black;
       color: white;
     }
-    
+
+    a.button.videoclip:hover {
+      background-color: #e74c3c; /* Darker red on hover */
+      color: white;
+    }
+
     .footer {
       position: fixed;
       bottom: 20px;
@@ -74,11 +89,15 @@
       width: 100%;
       text-align: center;
       font-size: 0.9em;
-      color: black; /* "Contacte" will be black */
+      color: black;
+      background-color: rgba(255, 255, 255, 0.6); /* Light semi-transparent background */
+      padding: 10px 0;
+      backdrop-filter: blur(4px); /* Optional: adds a soft blur behind the footer */
     }
+
     
     .footer a {
-      color: #90caf9; /* Restore original blue for email link */
+      color: blue;
       text-decoration: none;
     }
     
@@ -104,6 +123,7 @@
     <a href="https://www.youtube.com/channel/UC2nFN7Hpi6TfXyfhzrnSfhw" class="button" target="_blank">YouTube</a>
     <a href="https://www.instagram.com/indubio.oficial/" class="button" target="_blank">Instagram</a>
     <a href="https://indubiomusic2.wixsite.com/indubio" class="button" target="_blank">Lloc web</a>
+    <a href="https://www.youtube.com/watch?v=He4Xo-wG_0U" class="button videoclip" target="_blank">Lluny de tu</a>
   </div>
   
   <!-- Footer fijo -->
@@ -114,4 +134,3 @@
 
 </body>
 </html>
-
