@@ -112,6 +112,14 @@
       margin-top: 5px;
     }
 
+    /* Mobile or portrait screen background override */
+    @media only screen and (max-width: 768px), 
+           only screen and (orientation: portrait) {
+      body {
+        background-image: url('fondo_vertical.jpg');
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -135,4 +143,5 @@
 
 </body>
 </html>
+
 
