@@ -24,48 +24,54 @@
   	flex-direction: column;
   	align-items: center;
   	justify-content: flex-start;
-  	padding: 20px;
+  	padding: 1.25rem;
   	min-height: 100vh;
     }
 
     img.logo {
-      width: 120px;
+      width: 7.5rem;
       max-width: 80%;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       flex-shrink: 0;
     }
 
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 0.625rem;
       width: 100%;
-      max-width: 300px;
-      margin-bottom: 30px;
+      max-width: 18.75rem;
+      margin-bottom: 1.875rem;
       flex-shrink: 0;
     }
 
     a.button {
       display: block;
       text-align: center;
-      padding: 15px;
+      padding: 0.9375rem;
       /* background-color: transparent; */
-      /* border: 2px solid black;  Changed from white to black */
+      /* border: 0.125rem solid black;  Changed from white to black */
       /* color: black;  Changed from white to black */
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 0.3125rem;
       font-size: 1.1em;
       transition: background-color 0.3s, color 0.3s;
-      /* margin: 5px 0; Added margin to each button */
+      /* margin: 0.3125rem 0; Added margin to each button */
       background-color: rgba(0, 0, 0, 0.6); /* translucent black */
       color: white;
-      border: 2px solid white;
+      border: 0.125rem solid white;
     }
 
-    a.button.videoclip {
+    a.button.red {
       background-color: rgba(231, 76, 60, 0.6); /* Soft red with 60% opacity */
-      /* border: 2px solid rgba(231, 76, 60, 0.8); Slightly stronger border */
-      border: 2px solid white;
+      /* border: 0.125rem solid rgba(231, 76, 60, 0.8); Slightly stronger border */
+      border: 0.125rem solid white;
+      color: white;
+    }
+
+    a.button.blue {
+      background-color: rgba(70, 160, 220, 0.6); /* Soft blue with 60% opacity */
+      border: 0.125rem solid white;
       color: white;
     }
 
@@ -74,22 +80,36 @@
       color: white;
     }
 
-    a.button.videoclip:hover {
+    a.button.red:hover {
       background-color: #e74c3c; /* Darker red on hover */
       color: white;
     }
 
+    a.button.blue:hover {
+      background-color: rgba(70, 160, 220, 1); /* Darker blue on hover */
+      color: white;
+    }
+
+    .buttons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.625rem;
+      width: 100%;
+      max-width: 18.75rem;
+      margin-bottom: 1.25rem;
+    }
+
     .footer {
       position: relative;
-      bottom: 15px;
+      bottom: 0.9375rem;
       left: 0;
       width: 100%;
       text-align: center;
       font-size: 0.9em;
       color: black;
       background-color: rgba(255, 255, 255, 0.6); /* Light semi-transparent background */
-      padding: 10px 0;
-      backdrop-filter: blur(4px); /* Optional: adds a soft blur behind the footer */
+      padding: 0.625rem 0;
+      backdrop-filter: blur(0.25rem); /* Optional: adds a soft blur behind the footer */
     }
 
     
@@ -105,11 +125,11 @@
     .firma {
       font-size: 0.9em;
       color: black; /* Make "Indubio 2025 ©" black */
-      margin-top: 5px;
+      margin-top: 0.3125rem;
     }
 
     /* Mobile or portrait screen background override */
-    @media only screen and (max-width: 768px), 
+    @media only screen and (max-width: 48rem), 
            only screen and (orientation: portrait) {
       body {
         background-image: url('fondo_vertical.jpg');
@@ -122,13 +142,20 @@
   <!-- Logo -->
   <img src="logo.png" alt="Logo" class="logo" />
 
-  <!-- Botones -->
-  <div class="buttons">
+  
+  <!-- Botones en dos columnas -->
+  <div class="buttons-grid">
     <a href="https://open.spotify.com/artist/5IcCPhZOgrGb9i9sMqC93i" class="button" target="_blank">Spotify</a>
     <a href="https://www.youtube.com/channel/UC2nFN7Hpi6TfXyfhzrnSfhw" class="button" target="_blank">YouTube</a>
     <a href="https://www.instagram.com/indubio.oficial/" class="button" target="_blank">Instagram</a>
     <a href="https://indubiomusic2.wixsite.com/indubio" class="button" target="_blank">Lloc web</a>
-    <a href="https://www.youtube.com/watch?v=jtdDiHDwnxk" class="button videoclip" target="_blank">Que tot vagi bé</a>
+  </div>
+
+  <!-- Botones en una sola columna -->
+  <div class="buttons">
+    <a href="https://forms.gle/yAVvTHoHFQqhiHs18" class="button" target="_blank">Formulari samarretes</a>
+    <a href="https://www.youtube.com/watch?v=He4Xo-wG_0U" class="button red" target="_blank">Lluny de tu</a>
+    <a href="https://www.youtube.com/watch?v=He4Xo-wG_0U" class="button blue" target="_blank">Que tot vagi bé</a>
   </div>
   
   <!-- Footer fijo -->
@@ -139,5 +166,3 @@
 
 </body>
 </html>
-
-
